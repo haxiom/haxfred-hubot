@@ -1,0 +1,21 @@
+{
+  "name": "haxfred",
+  "version": "0.0.0",
+  "private": true,
+  "author": "blade@crookedneighbor.com",
+  "description": "Haxfred!",
+  "scripts": {
+    "start": "./bin/haxfred",
+    "start:windows": "./bin/haxfred.cmd"
+  },
+  "dependencies": {
+    "hubot": "^2.19.0",
+    "hubot-help": "^0.2.2",
+    "hubot-heroku-keepalive": "^1.0.3",
+    "hubot-slack": "^4.4.0",
+    "levenshtein": "^1.0.5"
+  },
+  "engines": {
+    "node": "^6"
+  }
+}
