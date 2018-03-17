@@ -12,6 +12,7 @@
 #   hubot (magic|mtg) flip <name> - Display the reverse side of a Magic: The Gathering card named <name>
 #   hubot (magic|mtg) (price|$) <name> - Display the prices for a Magic: The Gathering card named <name>
 #   hubot (magic|mtg) rulings <name> - Display the rulings for a Magic: The Gathering card named <name>
+#   hubot (magic|mtg) query <search> - Display the cards that match a scryfall search. Limits to 5 cards.
 #   hubot (magic|mtg) spoilers [<set_symbol>] - Start polling for spoilers for a specific set. Polling is set for every fifteen minutes and stops completely after 10 hours. If no set is specified, dog will look for the most recent set
 #   hubot (magic|mtg) spoilers cancel - Stop all active spoiler feeds
 

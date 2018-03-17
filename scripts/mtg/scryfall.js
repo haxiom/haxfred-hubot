@@ -31,12 +31,18 @@ function queryByScryfallId (id) {
 	return queryScryfall(`cards/${id}`);
 }
 
-function queryBySearchTerm (searchTerm, additionalQueries) {
+function queryBySearchTerm (searchTerm, additionalQueries, returnRaw) {
   searchTerm = searchTerm.replace(/’/, "'"); // slack sends smart quotes :shakesfist:
   let endpoint = `cards/search?q=${encodeURIComponent(searchTerm)}`;
   if (additionalQueries) { endpoint = endpoint + `&${additionalQueries}`; }
 
-  return queryScryfall(endpoint).then(response => response.data);
+  return queryScryfall(endpoint).then((response) => {
+    if (returnRaw) {
+      return response;
+    } else {
+      return response.data;
+    }
+  });
 }
 
 function queryByName (name) {

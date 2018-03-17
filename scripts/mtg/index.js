@@ -1,6 +1,7 @@
 const commandShow = require('./command-show');
 const commandFlip = require('./command-flip');
 const commandRulings = require('./command-rulings');
+const commandQuery = require('./command-query');
 const commandPrice = require('./command-price');
 const commandSpoilers = require('./command-spoilers');
 
@@ -10,6 +11,7 @@ const CARD_DISPLAY_COMMANDS = {
   flip: commandFlip,
   price: commandPrice,
   $: commandPrice,
+  query: commandQuery,
   rulings: commandRulings
 }
 
